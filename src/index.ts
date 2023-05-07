@@ -5,7 +5,7 @@ const PORT=process.env.PORT||3000;
 const app:Application =express();
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended:true}));
-app.get('/',(req,res)=>{res.send("Connected")});
+app.get('/path',(req,res)=>{res.send("Connected")});
 
 app.listen(PORT,()=>{
     console.log("connected",PORT);
